@@ -10,6 +10,10 @@ const axiosClient = axios.create({
 });
 
 axiosClient.interceptors.request.use((config) => {
+  if (config.skipAuth) {
+    return config;
+  }
+
   // Support token stored either as `token` key or inside `user.token`.
   const token = localStorage.getItem("token") || (() => {
     try {

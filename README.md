@@ -20,7 +20,7 @@ npm run dev
 
 ## Environment Variables
 
-- `VITE_API_BASE_URL` (default: `http://localhost:3000`)
+- `VITE_API_BASE_URL` (default: `https://timelyx-backend-1.onrender.com`)
 
 ## Available Scripts
 
